@@ -22,6 +22,12 @@
   },
   "devDependencies": {
     "prettier": "^1.11.1"
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "prettier": "^1.11.1",
     "tailwindcss": "^0.4.3"
   }
