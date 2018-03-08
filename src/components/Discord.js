@@ -104,6 +104,20 @@ class Discord extends Component {
   }
 }
 
+const Success = ({ onClose }) => (
+  <div>
+    <p>
+      <strong>🎉 Success!</strong>
+    </p>
+    <p className="mb-4">{successMessage}</p>
+    <div className="flex justify-end">
+      <button className="uppercase text-grey-dark" onClick={onClose}>
+        Close this
+      </button>
+    </div>
+  </div>
+);
+
 const modalStyles = {
   content: {
     minWidth:
