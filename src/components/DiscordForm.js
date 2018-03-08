@@ -30,8 +30,12 @@ class DiscordForm extends Component {
     this.setState({ submitLabel: "Submitting…" });
     axios
       .post(MAILER_ENDPOINT, this.state.payload)
-      .then(response => this.props.onSuccess())
+      .then(response => {
+        console.log("mail success", response);
+        this.props.onSuccess();
+      })
       .catch(error => {
+        console.log("mail error", error);
         this.setState({
           errors: "We gotta have a valid email address!",
           submitLabel: "Try again"
