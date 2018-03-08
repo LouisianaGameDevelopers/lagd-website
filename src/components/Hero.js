@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Blurb from "./HeroBlurb";
 
-import dataURI from "../../data/hero-image.js";
-import imgGlitch from "img-glitch";
+import { batonRouge } from "../static/images";
 
 class Hero extends Component {
   constructor(props) {
@@ -11,18 +10,14 @@ class Hero extends Component {
     this.minHeight = 700;
   }
 
-  componentDidMount() {
-    const glitch = imgGlitch(this.image, {
-      maxErrors: 300,
-      margin: 999,
-      limiter: 0.8
-    });
-    glitch.start();
-  }
-
   render() {
     return (
-      <div className="lagd-covered" style={{ minHeight: this.minHeight }}>
+      <div
+        style={{
+          minHeight: this.minHeight,
+          background: `center / cover no-repeat url(${batonRouge})`
+        }}
+      >
         <div style={styles.content}>
           <div className="px-6">
             <div className="container mx-auto">
@@ -36,12 +31,6 @@ class Hero extends Component {
         </div>
 
         <Overlay />
-
-        <img
-          className="lagd-cover"
-          src={dataURI}
-          ref={node => (this.image = node)}
-        />
       </div>
     );
   }
