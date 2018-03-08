@@ -62,7 +62,7 @@ class Discord extends Component {
         >
           <h1 className="mb-2">
             <img
-              style={{ height: 80 }}
+              style={{ height: 60 }}
               src={discordLogoWordmark}
               alt="Discord logo with wordmark"
             />
