@@ -59,6 +59,30 @@ class IndexPage extends Component {
             mapElement={<div style={styles.map} />}
           />
         </div>
+
+        <div className="bg-black container mx-auto px-6 py-8">
+          <div className="flex justify-between items-center">
+            <a className="text-white" href="mailto:hello@lagd.network">
+              hello@lagd.network
+            </a>
+            <span className="text-grey-light text-sm">
+              Backgroung image (modified) is{" "}
+              <a
+                className="text-white"
+                href="https://creativecommons.org/licenses/by-sa/2.0/"
+              >
+                CC BY-SA 2.0
+              </a>{" "}
+              by{" "}
+              <a
+                className="text-white"
+                href="https://www.flickr.com/photos/magichorse/2426436883"
+              >
+                neil o
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     );
   }
