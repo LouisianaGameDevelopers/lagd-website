@@ -6,23 +6,6 @@ import { logo } from "../static/images";
 const Header = () => (
   <header className="flex justify-between">
     <img src={logo} style={{ width: 70 }} />
-    <nav className="flex items-center text-sm font-semibold">
-      <Link className={linkClasses} to="/">
-        Home
-      </Link>
-      <a className={linkClasses} href="#about">
-        About
-      </a>
-      <a className={linkClasses} href="#rules">
-        Rules
-      </a>
-      <a className={linkClasses} href="#database">
-        Database
-      </a>
-      <a className={linkClasses} href="#contact">
-        Contact
-      </a>
-    </nav>
   </header>
 );
 
