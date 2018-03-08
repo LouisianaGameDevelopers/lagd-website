@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import logo from "../static/images/logo.svg";
+import { logo } from "../static/images";
 
 const Header = () => (
   <header className="flex justify-between">
     <img src={logo} style={{ width: 70 }} />
-    <nav className="flex items-center">
+    <nav className="flex items-center text-sm font-semibold">
       <Link className={linkClasses} to="/">
         Home
       </Link>

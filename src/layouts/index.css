@@ -1,13 +1,33 @@
-@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700+Mrs+Sheppards");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro|Work+Sans:400,600,700|Permanent+Marker");
 
 @tailwind preflight;
 
 body {
-  @apply .font-primary .text-white .antialiased .leading-normal .bg-black;
+  @apply .text-base .font-sans .text-white .antialiased .leading-normal .bg-black;
 }
 
 a {
   text-decoration: none;
+}
+
+a,
+button {
+  transition: opacity 0.2s;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.is-frosted {
+  filter: blur(2px);
 }
 
 .measure {
@@ -33,6 +53,10 @@ a {
   to {
     color: transparent;
   }
+}
+
+.bg-sunset {
+  background: linear-gradient(-45deg, #f58699, #f1c0b2, #abbfc0);
 }
 
 .lagd-covered {

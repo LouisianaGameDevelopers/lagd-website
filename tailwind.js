@@ -45,6 +45,10 @@ let defaultConfig = require("tailwindcss/defaultConfig")();
 let colors = {
   transparent: "transparent",
 
+  sunset: "#f3819a",
+  "sunset-light": "#efadbb",
+  "sunset-dark": "#da3155",
+
   black: "#22292f",
   "grey-darkest": "#3d4852",
   "grey-darker": "#606f7b",
@@ -189,9 +193,9 @@ module.exports = {
   */
 
   fonts: {
-    primary: ["Anonymous Pro", "monospace"],
-    display: ["Mrs Sheppards", "cursive"],
+    display: ["Permanent Marker", "cursive"],
     sans: [
+      "Work Sans",
       "system-ui",
       "BlinkMacSystemFont",
       "-apple-system",
@@ -205,7 +209,8 @@ module.exports = {
       "Helvetica Neue",
       "sans-serif"
     ],
-    serif: [
+    heading: [
+      "Oswald",
       "Constantia",
       "Lucida Bright",
       "Lucidabright",
@@ -218,6 +223,7 @@ module.exports = {
       "serif"
     ],
     mono: [
+      "Anonymous Pro",
       "Menlo",
       "Monaco",
       "Consolas",
@@ -247,16 +253,15 @@ module.exports = {
   */
 
   textSizes: {
-    xs: ".75rem", // 12px
-    sm: ".875rem", // 14px
-    base: "1rem", // 16px
-    lg: "1.125rem", // 18px
-    xl: "1.25rem", // 20px
-    "2xl": "1.5rem", // 24px
-    "3xl": "1.875rem", // 30px
-    "4xl": "2.25rem", // 36px
-    "5xl": "3rem", // 48px
-    headline: "4.5rem"
+    xs: "0.8em",
+    sm: "0.9rem",
+    base: "1.125rem",
+    lg: "1.25rem",
+    xl: "1.5rem",
+    "2xl": "1.8755rem",
+    "3xl": "2.24rem",
+    "4xl": "3.3rem",
+    "5xl": "5rem"
   },
 
   /*
@@ -611,7 +616,8 @@ module.exports = {
     "3": "0.75rem",
     "4": "1rem",
     "6": "1.5rem",
-    "8": "2rem"
+    "8": "2rem",
+    xl: "6rem"
   },
 
   /*
