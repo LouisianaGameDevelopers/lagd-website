@@ -60,15 +60,8 @@ class Discord extends Component {
           className="p-6 shadow-lg rounded text-sm"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
         >
-          <h1
-            className="mb-2"
-            style={{
-              textIndent: -9999,
-              backgroundImage: `url(${discordLogoWordmark}`,
-              backgroundRepeat: "no-repeat"
-            }}
-          >
-            Discord
+          <h1 className="mb-2">
+            <img src={discordLogoWordmark} alt="Discord logo with wordmark" />
           </h1>
 
           <p className="pb-6">
