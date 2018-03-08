@@ -61,7 +61,11 @@ class Discord extends Component {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
         >
           <h1 className="mb-2">
-            <img src={discordLogoWordmark} alt="Discord logo with wordmark" />
+            <img
+              style={{ height: 80 }}
+              src={discordLogoWordmark}
+              alt="Discord logo with wordmark"
+            />
           </h1>
 
           <p className="pb-6">
