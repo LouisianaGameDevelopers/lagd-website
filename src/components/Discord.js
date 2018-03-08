@@ -106,7 +106,8 @@ class Discord extends Component {
 
 const modalStyles = {
   content: {
-    minWidth: window.innerWidth >= 768 ? 550 : 340,
+    minWidth:
+      typeof window == "undefined" ? 0 : window.innerWidth >= 768 ? 550 : 340,
     top: "30%",
     right: "auto",
     bottom: "auto",

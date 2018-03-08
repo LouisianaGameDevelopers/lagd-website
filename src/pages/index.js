@@ -66,7 +66,8 @@ class IndexPage extends Component {
 
 const styles = {
   map: {
-    height: window.innerWidth >= 576 ? 600 : 500
+    height:
+      typeof window == "undefined" ? 0 : window.innerWidth >= 576 ? 600 : 500
   }
 };
 
