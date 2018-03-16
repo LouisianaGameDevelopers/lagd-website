@@ -12,14 +12,14 @@ const EventCard = ({ left }) => (
   >
     <h1
       itemProp="name"
-      className="text-lg bg-black text-white text-normal p-4 uppercase rounded-t"
+      className="leading-tight text-lg bg-black text-white text-normal p-4 uppercase rounded-t"
     >
       Our next meetup
     </h1>
 
     <img src={techParkPhoto} alt="Photo of The Louisiana Tech Park" />
 
-    <div className="p-4">
+    <div className="p-4 leading-normal">
       <div itemProp="startDate" content="2018-04-07T12:00">
         <strong>Saturday, April 7, 2018</strong>
       </div>
@@ -28,7 +28,7 @@ const EventCard = ({ left }) => (
         6:00 PM
       </span>
       <div
-        className="text-grey-dark text-sm"
+        className="text-grey-darker text-sm"
         itemProp="location"
         itemScope
         itemType="http://schema.org/Place"

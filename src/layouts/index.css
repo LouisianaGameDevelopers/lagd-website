@@ -1,23 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro|Work+Sans:400,600,700|Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Permanent+Marker");
 
 @tailwind preflight;
 
 body {
-  @apply .text-base .font-sans .text-white .antialiased .leading-normal .bg-black;
-}
-
-a {
-  text-decoration: none;
+  @apply .text-base .font-sans .text-white .antialiased .bg-black;
 }
 
 a,
 button {
-  transition: opacity 0.2s;
+  transition: all 0.2s;
 }
 
-a:hover,
-button:hover {
-  opacity: 0.8;
+.hover\:fade:hover {
+  opacity: 0.7;
 }
 
 .appearance-none {
@@ -30,20 +25,12 @@ button:hover {
   filter: blur(2px);
 }
 
-.measure {
-  max-width: 30em;
-}
-
-.measure-wise {
-  max-width: 34em;
-}
-
-.measure-narrow {
-  max-width: 20em;
+.bg-sunset-gradient {
+  background: linear-gradient(-45deg, #f58699, #f1c0b2, #abbfc0);
 }
 
 .caret {
-  animation: blink-caret 1s infinite;
+  animation: blink-caret 0.5s ease-in-out alternate infinite;
 }
 
 @keyframes blink-caret {
@@ -53,28 +40,6 @@ button:hover {
   to {
     color: transparent;
   }
-}
-
-.bg-sunset {
-  background: linear-gradient(-45deg, #f58699, #f1c0b2, #abbfc0);
-}
-
-.lagd-covered {
-  position: relative;
-  overflow: hidden;
-}
-
-.lagd-cover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  max-height: none;
-  max-width: none;
-  min-height: 100%;
-  min-width: 100%;
-  transform: translate(-50%, -50%);
 }
 
 @tailwind utilities;

@@ -57,8 +57,8 @@ class Discord extends Component {
     return (
       <section>
         <div
-          className="p-6 shadow-lg rounded text-sm"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
+          className="p-6 shadow-lg rounded"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <h1 className="mb-2">
             <img
@@ -68,7 +68,7 @@ class Discord extends Component {
             />
           </h1>
 
-          <p className="pb-6">
+          <p className="pb-6 leading-normal">
             Our Discord server is our home base for people to chat about
             everything game development related, get feedback on their work, and
             meet other people! We also have a monthly all-day meetup in Baton
@@ -77,7 +77,7 @@ class Discord extends Component {
           </p>
 
           <button
-            className="bg-sunset px-4 py-3 uppercase font-semibold shadow-md rounded"
+            className="bg-sunset-gradient px-4 py-3 uppercase font-bold shadow-md rounded text-sm hover:fade"
             onClick={this.handleOpenModal}
           >
             Get an invitation
@@ -90,7 +90,7 @@ class Discord extends Component {
           style={modalStyles}
         >
           <section className="subpixel-antialiased text-black p-4">
-            <h1 className="text-base md:text-lg mb-4 uppercase">
+            <h1 className="text-base md:text-lg mb-6 uppercase">
               Request a Discord invite
             </h1>
             {this.renderForm()}

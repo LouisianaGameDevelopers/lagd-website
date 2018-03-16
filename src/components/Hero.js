@@ -13,6 +13,7 @@ class Hero extends Component {
   render() {
     return (
       <div
+        className="relative"
         style={{
           minHeight: this.minHeight,
           background: `center / cover no-repeat url(${batonRouge})`

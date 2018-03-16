@@ -37,7 +37,7 @@ class IndexPage extends Component {
         <Hero />
 
         <div id="about" className="px-6">
-          <div className="container md:flex justify-between mx-auto py-8 md:py-xl">
+          <div className="container md:flex justify-between items-center mx-auto py-8 md:py-xl">
             <div
               className="md:w-1/2 mb-6 md:mb-0"
               ref={node => (this.eventCardLeftRef = node)}
@@ -61,21 +61,24 @@ class IndexPage extends Component {
         </div>
 
         <div className="bg-black container mx-auto px-6 py-8">
-          <div className="flex justify-between items-center">
-            <a className="text-white" href="mailto:hello@lagd.network">
+          <div className="md:flex justify-between items-center">
+            <a
+              className="text-white no-underline hover:fade block mb-4 md:mb-0"
+              href="mailto:hello@lagd.network"
+            >
               hello@lagd.network
             </a>
             <span className="text-grey-light text-sm">
               Backgroung image (modified) is{" "}
               <a
-                className="text-white"
+                className="text-white no-underline hover:fade"
                 href="https://creativecommons.org/licenses/by-sa/2.0/"
               >
                 CC BY-SA 2.0
               </a>{" "}
               by{" "}
               <a
-                className="text-white"
+                className="text-white no-underline hover:fade"
                 href="https://www.flickr.com/photos/magichorse/2426436883"
               >
                 neil o

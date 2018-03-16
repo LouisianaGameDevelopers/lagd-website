@@ -58,7 +58,7 @@ class DiscordForm extends Component {
             }
             placeholder="you@domain.com"
           />
-          <div className="text-sm text-red">{this.state.errors}</div>
+          <div className="text-sm text-red mt-2">{this.state.errors}</div>
         </div>
 
         <div className="mb-6">
@@ -113,8 +113,7 @@ class DiscordForm extends Component {
             Nevermind
           </button>
           <button
-            className="px-4 py-3 uppercase font-semibold shadow-md rounded"
-            style={{ backgroundColor: "#f58699" }}
+            className="bg-sunset hover:bg-sunset-dark px-4 py-3 uppercase text-white antialiased font-semibold shadow-md rounded"
             onClick={this.handleSubmit}
           >
             {this.state.submitLabel}
