@@ -45,6 +45,10 @@ class DiscordForm extends Component {
   render() {
     return (
       <form className="text-sm md:text-base" onSubmit={this.handleSubmit}>
+        <h1 className="text-base md:text-lg mb-6 uppercase">
+          Request a Discord invite
+        </h1>
+
         <div className="mb-6">
           <Input
             type="email"
