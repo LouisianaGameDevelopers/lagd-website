@@ -90,9 +90,6 @@ class Discord extends Component {
           style={modalStyles}
         >
           <section className="subpixel-antialiased text-black p-4">
-            <h1 className="text-base md:text-lg mb-6 uppercase">
-              Request a Discord invite
-            </h1>
             {this.renderForm()}
           </section>
         </Modal>
@@ -102,17 +99,15 @@ class Discord extends Component {
 }
 
 const Success = ({ onClose }) => (
-  <div>
-    <p>
-      <strong>🎉 Success!</strong>
-    </p>
-    <p className="mb-4">{successMessage}</p>
+  <section>
+    <h1 className="text-base leading-tight mb-2">🎉 Success!</h1>
+    <p className="leading-normal mb-6">{successMessage}</p>
     <div className="flex justify-end">
       <button className="uppercase text-grey-dark" onClick={onClose}>
         Close this
       </button>
     </div>
-  </div>
+  </section>
 );
 
 const modalStyles = {
