@@ -4,8 +4,7 @@ import axios from "axios";
 import Input from "./Input";
 import Select from "./Select";
 
-const MAILER_ENDPOINT =
-  "https://lagd-webcore-staging.herokuapp.com/requests/discord";
+const MAILER_ENDPOINT = "https://core.lagd.network/api/requests/discord";
 
 class DiscordForm extends Component {
   constructor(props) {
