@@ -55,7 +55,11 @@ class IndexPage extends Component {
           </div>
         </div>
 
-        <div id="directory" className="bg-white text-black px-6">
+        <div
+          id="directory"
+          className="px-6"
+          style={{ backgroundColor: "#3a4b57" }}
+        >
           <div className="container md:flex justify-between items-center mx-auto py-8 md:py-xl">
             <div className="md:w-1/2">
               <section className="w-full max-w-sm">
@@ -72,14 +76,14 @@ class IndexPage extends Component {
                     the directory, create a{" "}
                     <a
                       href={developerForm}
-                      className="text-sunset no-underline hover:fade"
+                      className="text-sunset no-underline hover:fade font-semibold"
                     >
                       Developer Submission
                     </a>. If you’re a developer and have created one or more{" "}
                     <strong>games</strong>, fill out a{" "}
                     <a
                       href={gameForm}
-                      className="text-teal no-underline hover:fade"
+                      className="text-teal no-underline hover:fade font-semibold"
                     >
                       Game Submission
                     </a>{" "}
