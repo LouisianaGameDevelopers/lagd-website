@@ -116,7 +116,7 @@ class DiscordForm extends Component {
             Nevermind
           </button>
           <button
-            className="bg-sunset hover:bg-sunset-dark px-4 py-3 uppercase text-white antialiased font-semibold shadow-md rounded"
+            className="bg-sunset px-4 py-3 uppercase text-white antialiased font-semibold shadow-md rounded"
             onClick={this.handleSubmit}
           >
             {this.state.submitLabel}
