@@ -3,9 +3,8 @@ let defaultConfig = require("tailwindcss/defaultConfig")();
 let colors = {
   transparent: "transparent",
 
-  sunset: "#f3819a",
-  "sunset-light": "#efadbb",
-  "sunset-dark": "#da3155",
+  sunset: "#F5467F",
+  teal: "#23ABAE",
 
   black: "#22292f",
   "grey-darkest": "#3d4852",
@@ -31,7 +30,7 @@ module.exports = {
   fonts: {
     display: ["Permanent Marker", "cursive"],
     sans: [
-      "Open Sans",
+      "IBM Plex Sans",
       "system-ui",
       "BlinkMacSystemFont",
       "-apple-system",
