@@ -77,7 +77,7 @@ class Discord extends Component {
           </p>
 
           <button
-            className="bg-sunset-gradient px-4 py-3 uppercase font-bold shadow-md rounded text-sm hover:fade"
+            className="bg-sunset-gradient text-white px-4 py-3 uppercase font-bold shadow-md rounded text-sm hover:fade"
             onClick={this.handleOpenModal}
           >
             Get an invitation
