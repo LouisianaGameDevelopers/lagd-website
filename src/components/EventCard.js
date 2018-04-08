@@ -20,12 +20,12 @@ const EventCard = ({ left }) => (
     <img src={techParkPhoto} alt="Photo of The Louisiana Tech Park" />
 
     <div className="p-4 leading-normal">
-      <div itemProp="startDate" content="2018-04-07T12:00">
-        <strong>Saturday, April 7, 2018</strong>
+      <div itemProp="startDate" content="2018-05-05T14:00">
+        <strong>Saturday, May 5, 2018</strong>
       </div>
-      12:00 PM&ndash;
-      <span itemProp="endDate" content="2018-04-07T18:00">
-        6:00 PM
+      2:00 PM&ndash;
+      <span itemProp="endDate" content="2018-05-05T20:00">
+        8:00 PM
       </span>
       <div
         className="text-grey-darker text-sm"
