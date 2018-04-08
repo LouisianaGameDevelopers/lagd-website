@@ -30,8 +30,6 @@ class Hero extends Component {
             </div>
           </div>
         </div>
-
-        <Overlay />
       </div>
     );
   }
