@@ -21,7 +21,7 @@ const EventCard = ({ left }) => (
 
     <div className="p-4 leading-normal">
       <div itemProp="startDate" content="2018-05-05T14:00">
-        <strong>Saturday, May 5, 2018</strong>
+        <strong>Saturday, May 12, 2018</strong>
       </div>
       2:00 PM&ndash;
       <span itemProp="endDate" content="2018-05-05T20:00">
