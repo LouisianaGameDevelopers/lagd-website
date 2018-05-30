@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import Hero from "../components/Hero";
-import EventCard from "../components/EventCard";
-import EventMap from "../components/EventMap";
-import About from "../components/About";
-import Discord from "../components/Discord";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import Hero from '../components/Hero';
+import EventCard from '../components/EventCard';
+import EventMap from '../components/EventMap';
+import About from '../components/About';
+import Discord from '../components/Discord';
 
-import { logo } from "../static/images";
+import { logo } from '../static/images';
 
 const developerForm =
-  "https://docs.google.com/forms/d/13h_t30lTZ_KYVJ7B8DcPUg88gU7Uv48KXmhpMHWq4jQ";
+  'https://docs.google.com/forms/d/13h_t30lTZ_KYVJ7B8DcPUg88gU7Uv48KXmhpMHWq4jQ';
 const gameForm =
-  "https://docs.google.com/forms/u/2/d/13svBBlZCaI5d4X7O0J3G6cYKHd9TV-OKFlmLVPFUMiI";
+  'https://docs.google.com/forms/u/2/d/13svBBlZCaI5d4X7O0J3G6cYKHd9TV-OKFlmLVPFUMiI';
 
 class IndexPage extends Component {
   constructor(props) {
@@ -29,11 +29,11 @@ class IndexPage extends Component {
 
   componentDidMount() {
     this.setEventCardPosition();
-    window.addEventListener("resize", this.setEventCardPosition);
+    window.addEventListener('resize', this.setEventCardPosition);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.setEventCardPosition);
+    window.removeEventListener('resize', this.setEventCardPosition);
   }
 
   render() {
@@ -56,38 +56,47 @@ class IndexPage extends Component {
         </div>
 
         <div
-          id="directory"
+          id="post-pixel"
           className="px-6"
-          style={{ backgroundColor: "#3a4b57" }}
+          style={{ backgroundColor: '#3a4b57' }}
         >
           <div className="container md:flex justify-between items-center mx-auto py-8 md:py-xl">
             <div className="md:w-1/2">
               <section className="w-full max-w-sm">
-                <h1 className="leading-tight text-xl text-normal mb-2 uppercase">
-                  LAGD Directory
+                <h1 className="leading-tight text-xl text-normal uppercase mb-1">
+                  Post-Pixel
                 </h1>
+
+                <h2 className="text-base mb-2 uppercase opacity-75">
+                  An Interactive Art Showcase
+                </h2>
 
                 <div className="leading-normal">
                   <p className="mb-4">
-                    We’re working on compiling an online directory of
-                    Louisiana-based game developers and the games y’all have
-                    created—and we need your help! If you’re a{" "}
-                    <strong>developer</strong> and you’d like to be included in
-                    the directory, create a{" "}
+                    We’re hosting a gallery event this summer to celebrate
+                    interactive art made in Louisiana and the southeastern USA.
+                    If you have a game or other interactive creation you'd like
+                    to show, submit it with our{' '}
                     <a
-                      href={developerForm}
-                      className="text-sunset no-underline hover:fade font-semibold"
+                      href="https://goo.gl/forms/ZM0DfsjYUiwNJWey1"
+                      className="text-white no-underline border-b border-grey hover:text-grey"
                     >
-                      Developer Submission
-                    </a>. If you’re a developer and have created one or more{" "}
-                    <strong>games</strong>, fill out a{" "}
-                    <a
-                      href={gameForm}
-                      className="text-teal no-underline hover:fade font-semibold"
-                    >
-                      Game Submission
-                    </a>{" "}
-                    for each one!
+                      Gallery Submission form
+                    </a>.
+                  </p>
+                  <p>
+                    The gallery will be open from <strong>3PM to 9PM</strong> at{' '}
+                    <strong>
+                      <a
+                        href="https://littlewars.com"
+                        className="text-white no-underline border-b border-grey hover:text-grey"
+                      >
+                        Little Wars
+                      </a>
+                    </strong>{' '}
+                    in Baton Rouge. Attending and showcasing is free, and snacks
+                    and LAGD stickers will be available for purchase at the
+                    event.
                   </p>
                 </div>
               </section>
@@ -95,18 +104,10 @@ class IndexPage extends Component {
 
             <div className="md:w-1/2">
               <a
-                href={developerForm}
+                href="https://goo.gl/forms/ZM0DfsjYUiwNJWey1"
                 className="mb-4 block w-full md:w-1/2 px-6 py-4 bg-sunset text-white rounded no-underline mx-auto text-center font-semibold uppercase text-sm shadow-md hover:fade"
               >
-                Developer Submission
-              </a>
-
-              <a
-                href={gameForm}
-                className="bg-teal block w-full md:w-1/2 px-6 py-4 bg-black text-white rounded no-underline mx-auto text-center font-semibold uppercase text-sm shadow-md hover:fade"
-                style={{ backgroundColor: "#23abae" }}
-              >
-                Game Submission
+                Gallery Submission
               </a>
             </div>
           </div>
@@ -131,14 +132,14 @@ class IndexPage extends Component {
               hello@lagd.network
             </a>
             <span className="text-grey-light text-sm">
-              Backgroung image (modified) is{" "}
+              Backgroung image (modified) is{' '}
               <a
                 className="text-white no-underline hover:fade"
                 href="https://creativecommons.org/licenses/by-sa/2.0/"
               >
                 CC BY-SA 2.0
-              </a>{" "}
-              by{" "}
+              </a>{' '}
+              by{' '}
               <a
                 className="text-white no-underline hover:fade"
                 href="https://www.flickr.com/photos/magichorse/2426436883"
@@ -156,7 +157,7 @@ class IndexPage extends Component {
 const styles = {
   map: {
     height:
-      typeof window == "undefined" ? 0 : window.innerWidth >= 576 ? 600 : 500
+      typeof window == 'undefined' ? 0 : window.innerWidth >= 576 ? 600 : 500
   }
 };
 
