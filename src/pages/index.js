@@ -74,17 +74,7 @@ class IndexPage extends Component {
                 <div className="leading-normal">
                   <p className="mb-4">
                     We’re hosting a gallery event this summer to celebrate
-                    interactive art made in Louisiana and the southeastern USA.
-                    If you have a game or other interactive creation you'd like
-                    to show, submit it with our{' '}
-                    <a
-                      href="https://goo.gl/forms/ZM0DfsjYUiwNJWey1"
-                      className="text-white no-underline border-b border-grey hover:text-grey"
-                    >
-                      Gallery Submission form
-                    </a>.
-                  </p>
-                  <p>
+                    interactive art made in Louisiana and the southeastern USA!
                     The gallery will be open from <strong>3PM to 9PM</strong> at{' '}
                     <strong>
                       <a
@@ -98,14 +88,44 @@ class IndexPage extends Component {
                     and LAGD stickers will be available for purchase at the
                     event.
                   </p>
+                  <p className="mb-4">
+                    If you’d like to attend,{' '}
+                    <a
+                      href="https://www.eventbrite.com/e/post-pixel-an-interactive-art-showcase-tickets-46587132367"
+                      className="text-white no-underline border-b border-grey hover:text-grey"
+                    >
+                      get your free ticket
+                    </a>.
+                  </p>
+                  <p>
+                    If you have a game or other interactive creation you'd like
+                    to show, submit it with our{' '}
+                    <a
+                      href="https://goo.gl/forms/ZM0DfsjYUiwNJWey1"
+                      className="text-white no-underline border-b border-grey hover:text-grey"
+                    >
+                      Gallery Submission form
+                    </a>.{' '}
+                    <em>
+                      Just be sure to get your submission to us by August 8!
+                    </em>
+                  </p>
                 </div>
               </section>
             </div>
 
             <div className="md:w-1/2">
               <a
+                href="https://www.eventbrite.com/e/post-pixel-an-interactive-art-showcase-tickets-46587132367"
+                className="mb-6 bg-teal block w-full md:w-1/2 px-6 py-4 bg-black text-white rounded no-underline mx-auto text-center font-semibold uppercase text-sm shadow-md hover:fade"
+                style={{ backgroundColor: '#23abae' }}
+              >
+                Get Tickets!
+              </a>
+
+              <a
                 href="https://goo.gl/forms/ZM0DfsjYUiwNJWey1"
-                className="mb-4 block w-full md:w-1/2 px-6 py-4 bg-sunset text-white rounded no-underline mx-auto text-center font-semibold uppercase text-sm shadow-md hover:fade"
+                className="block w-full md:w-1/2 px-6 py-4 bg-sunset text-white rounded no-underline mx-auto text-center font-semibold uppercase text-sm shadow-md hover:fade"
               >
                 Gallery Submission
               </a>
