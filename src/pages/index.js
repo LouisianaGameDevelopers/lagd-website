@@ -75,7 +75,8 @@ class IndexPage extends Component {
                   <p className="mb-4">
                     We’re hosting a gallery event this summer to celebrate
                     interactive art made in Louisiana and the southeastern USA!
-                    The gallery will be open from <strong>3PM to 9PM</strong> at{' '}
+                    Post-Pixel will be <strong>August 11</strong> from{' '}
+                    <strong>3PM to 9PM</strong> at{' '}
                     <strong>
                       <a
                         href="https://littlewars.com"
@@ -97,7 +98,7 @@ class IndexPage extends Component {
                       get your free ticket
                     </a>.
                   </p>
-                  <p>
+                  <p className="mb-4">
                     If you have a game or other interactive creation you'd like
                     to show, submit it with our{' '}
                     <a
