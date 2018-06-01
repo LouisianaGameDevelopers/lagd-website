@@ -63,11 +63,11 @@ class IndexPage extends Component {
           <div className="container md:flex justify-between items-center mx-auto py-8 md:py-xl">
             <div className="md:w-1/2">
               <section className="w-full max-w-sm">
-                <h1 className="leading-tight text-xl text-normal uppercase mb-1">
+                <h1 className="leading-tight text-xl text-normal uppercase text-sunset mb-1">
                   Post-Pixel
                 </h1>
 
-                <h2 className="text-base mb-2 uppercase opacity-75">
+                <h2 className="text-base mb-4 uppercase opacity-75">
                   An Interactive Art Showcase
                 </h2>
 
