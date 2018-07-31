@@ -75,7 +75,7 @@ class IndexPage extends Component {
                   <p className="mb-4">
                     We’re hosting a gallery event this summer to celebrate
                     interactive art made in Louisiana and the southeastern USA!
-                    Post-Pixel will be <strong>August 11</strong> from{' '}
+                    Post-Pixel will be <strong>November 3</strong> from{' '}
                     <strong>3PM to 9PM</strong> at{' '}
                     <strong>
                       <a
