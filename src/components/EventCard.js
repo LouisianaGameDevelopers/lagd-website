@@ -17,35 +17,9 @@ const EventCard = ({ left }) => (
       Our next meetup
     </h1>
 
-    <img src={techParkPhoto} alt="Photo of The Louisiana Tech Park" />
-
-    <div className="p-4 leading-normal">
-      <div itemProp="startDate" content="2018-08-04T14:00">
-        <strong>Saturday, August 4, 2018</strong>
-      </div>
-      2:00 PM&ndash;
-      <span itemProp="endDate" content="2018-08-04T20:00">
-        8:00 PM
-      </span>
-      <div
-        className="text-grey-darker text-sm"
-        itemProp="location"
-        itemScope
-        itemType="http://schema.org/Place"
-      >
-        <div itemProp="name">Louisiana Technology Park</div>
-        <div
-          itemProp="address"
-          itemScope
-          itemType="http://schema.org/PostalAddress"
-        >
-          <div itemProp="streetAddress">7117 Florida Blvd</div>
-          <span itemProp="addressLocality">Baton Rouge</span>,{" "}
-          <span itemProp="addressRegion">LA</span>
-          <span itemProp="postalCode">70806</span>
-        </div>
-      </div>
-    </div>
+    <p className="p-4 leading-normal">
+      We’re in the process of finding a new venue for our meetups—stay tuned for details!
+    </p>
   </section>
 );
 
